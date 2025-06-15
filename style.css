@@ -60,6 +60,7 @@ a:hover {
 .logo {
   font-size: 2rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .logo:hover {
@@ -68,9 +69,9 @@ a:hover {
 
 /* Hamburger Menu */
 
-#hamburger-nav {
+/* #hamburger-nav {
   display: none;
-}
+} */
 
 .hamburger-menu {
   position: relative;
@@ -118,7 +119,7 @@ a:hover {
   list-style: none;
 }
 
-menu-links.open {
+.menu-links.open {
   max-height: 300px; /* Adjust based on the number of links */
 }
 
@@ -142,4 +143,18 @@ menu-links.open {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
+.hamburger-icon span:first-child {
+  transform: none;
+}
 
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+/* Unecessary repetition? */
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+
+/* Sections */
