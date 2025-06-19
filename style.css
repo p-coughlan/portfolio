@@ -11,6 +11,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Canvas Styling */
+/* make the canvas cover the viewport, sit behind everything, and ignore pointer events */
+#bubble-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
