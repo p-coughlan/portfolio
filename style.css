@@ -1,6 +1,9 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/* Google Fonts */
+/* Importing Bebas Neue and Nunito fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 * {
   margin: 0;
@@ -8,7 +11,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 /* Canvas Styling */
@@ -55,6 +58,7 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 a {
@@ -72,6 +76,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .logo:hover {

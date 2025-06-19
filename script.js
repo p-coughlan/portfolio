@@ -28,18 +28,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // animation loop
   (function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let b of bubbles) {
-      b.y -= b.speed;
-      // recycle when off-screen
-      if (b.y < -b.r) {
-        Object.assign(b, createBubble());
-        b.y = canvas.height + b.r;
-      }
-      ctx.beginPath();
-      ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(173,216,230,${b.alpha})`;  // a gentle light-blue
-      ctx.fill();
-    }
+for (let b of bubbles) {
+  // move & recycle
+  b.y -= b.speed;
+  if (b.y < -b.r) {
+    Object.assign(b, createBubble());
+    b.y = canvas.height + b.r;
+  }
+
+  // draw path
+  ctx.beginPath();
+  ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
+
+  // pale-blue fill
+  ctx.fillStyle = `rgba(173,216,230,${b.alpha})`;
+  ctx.fill();
+
+  // subtle blue border
+  ctx.lineWidth   = 1;
+  ctx.strokeStyle = `rgba(135,206,235,${b.alpha})`;  // a tad darker sky-blue
+  ctx.stroke();
+}
+
     requestAnimationFrame(animate);
   })();
 });
