@@ -23,14 +23,10 @@
   .experience-details-container {
     margin-top: 2rem;
   }
-  #profile {
-    display: grid;
-    align-content: space-evenly;
-  }
-  /* #profile,
+  #profile,
   .section-container {
     display: block;
-  } */
+  }
   .arrow {
     display: none;
   }
@@ -59,9 +55,6 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
-    display: grid;
-    align-content: space-evenly;
-    gap: 0;
   }
   article {
     font-size: 1rem;
@@ -95,7 +88,7 @@
   }
   .section__pic-container {
     width: auto;
-    height:60vw;
+    height: 46vw;
     justify-content: center;
   }
   .section__text__p2 {
