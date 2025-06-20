@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     return {
       x:      Math.random() * canvas.width,
       y:      canvas.height + Math.random() * 100,
-      r:      Math.random() * 20 + 10,         // radius
-      speed:  Math.random() * 0.3 + 0.2,         // upward velocity
-      alpha:  Math.random() * 0.5 + 0.3        // transparency
+      r:      Math.random() * 50 + 0.5,         // radius 20 is max, 10 is min
+      speed:  Math.random() * 0.3 + 0.2,         // upward velocity 0.3 is max, 0.2 is min
+      alpha:  Math.random() * 0.4 + 0.2        // transparency 0.5 is max, 0.3 is min
     };
   }
 
   // populate an array of bubbles
-  const bubbles = Array.from({ length: 30 }, createBubble);
+  const bubbles = Array.from({ length: 50 }, createBubble); //
 
   // animation loop
   (function animate() {
