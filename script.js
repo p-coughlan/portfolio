@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       x:      Math.random() * canvas.width,
       y:      canvas.height + Math.random() * 100,
       r:      Math.random() * 50 + 0.5,        // radius 0.5–50px
-      speed:  Math.random() * 0.3 + 0.2,      // velocity 0.2–0.5px/frame
+      speed:  Math.random() * 0.3 + 0.1,      // velocity  0.1–0.4px/frame
       alpha:  Math.random() * 0.4 + 0.2       // transparency 0.2–0.6
     };
   }

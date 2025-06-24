@@ -95,7 +95,7 @@ nav {
 a {
   color: var(--text-color);
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: var(--accent-color);
 }
 
 a:hover {
@@ -258,6 +258,7 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  fill: var(--accent-color);
 }
 
 /* BUTTONS */
@@ -338,7 +339,17 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  color: var(--text-color);
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  transition: color 300ms ease;
 }
+
+.arrow:hover {
+  color: var(--accent-color);
+}
+
 
 .details-container {
   padding: 1.5rem;
@@ -346,7 +357,6 @@ section {
   background: var(--bg-color);
   border-radius: 2rem;
   border: var(--accent-color) 0.1rem solid;
-  border-color: var(--accent-color);
   text-align: center;
 }
 
