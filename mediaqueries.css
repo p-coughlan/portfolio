@@ -65,6 +65,10 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
+  /* Ensure width of projects on mobile */
+  .details-container {
+    min-width: 200px;
+  }
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -72,6 +76,10 @@
   }
   .contact-info-container {
     margin: 0;
+  }
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
   }
   .contact-info-container p,
   .nav-links li a {
