@@ -15,7 +15,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <!-- theme toggle as a nav item -->
@@ -42,7 +42,7 @@
         <div class="menu-links">
           <ul>
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             <li>
@@ -61,7 +61,7 @@
     <section id="profile">
       <div class="section__pic-container">
         <img
-          src="./assets/profile-pic.png"
+          src="./assets/profile-photo.jpg"
           alt="Patrick Coughlan profile picture"
           class="profile-pic"
         />
@@ -118,6 +118,23 @@
           </svg>
         </div>
       </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="arrow"
+        onclick="location.href='./#about'"
+      >
+        <circle cx="12" cy="12" r="10" stroke="currentColor"></circle>
+        <polyline points="8 12 12 16 16 12" stroke="currentColor"></polyline>
+        <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor"></line>
+      </svg>
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -146,8 +163,11 @@
                   d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"
                 />
               </svg>
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <h3>Skills</h3>
+              <p>
+                Frontend Development • UX/UI Design<br />Analytical Thinking •
+                Creative Problem Solving
+              </p>
             </div>
             <div class="details-container">
               <!-- Education SVG Icon-->
@@ -165,22 +185,28 @@
               </svg>
               <h3>Education</h3>
               <p>
-                L5 Dip Web Application Development<br />FdA
-                Professional Photograpy<br />B.A (hons) Fine Art
+                L5 Dip Web Application Development<br />B.A (hons) Fine Art<br />FdA
+                Professional Photograpy
               </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              With a background in both commercial plumbing engineering and fine
-              art, I bring a unique balance of technical precision and creative
-              thinking to web development. Over two decades in engineering
-              taught me how to design and maintain complex systems—skills
-              directly transferable to writing clean, scalable code. As a
-              practicing visual artist, I also have a strong eye for design,
-              user experience, and visual storytelling. This combination allows
-              me to build web experiences that are both structurally sound and
-              visually engaging, bridging functionality with thoughtful design.
+              I'm a career-changer with over 20 years of experience as a
+              commercial plumbing engineer, now focused on frontend and
+              full-stack web development. My background has equipped me with a
+              systems-based mindset, technical precision, and a strong ability
+              to troubleshoot and design complex solutions—skills that translate
+              seamlessly into writing clean, scalable code.
+            </p>
+            <p>
+              As a practicing visual artist and designer, I bring creativity,
+              aesthetic judgment, and attention to user experience to every
+              project. I've recently completed a Level 5 Diploma in Web
+              Application Development, where I built a range of practical,
+              real-world applications. I'm particularly passionate about
+              combining structure with creativity—whether it's through intuitive
+              user interfaces or thoughtful digital design.
             </p>
           </div>
         </div>
@@ -196,16 +222,16 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         class="arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#skills'"
       >
         <circle cx="12" cy="12" r="10" stroke="currentColor"></circle>
         <polyline points="8 12 12 16 16 12" stroke="currentColor"></polyline>
         <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor"></line>
       </svg>
     </section>
-    <section id="experience">
+    <section id="skills">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -513,7 +539,11 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">Ramen Nakama</h2>
-            <p class="project-text">Ramen Nakama is a restaurant website that showcases the menu, location, and contact information. It features a responsive design and is built using HTML, CSS, and JavaScript.</p>
+            <p class="project-text">
+              Ramen Nakama is a restaurant website that showcases the menu,
+              location, and contact information. It features a responsive design
+              and is built using HTML, CSS, and JavaScript.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -537,8 +567,16 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Coughlan's Restaurant</h2>
-            <p class="project-text">Some text here about the Coughlan's Restaurant project. It is a restaurant booking system that allows users to make reservations online. The project is built using Django and PostgreSQL, providing a robust backend for managing bookings and customer data.</p>
+            <h2 class="experience-sub-title project-title">
+              Coughlan's Restaurant
+            </h2>
+            <p class="project-text">
+              Some text here about the Coughlan's Restaurant project. It is a
+              restaurant booking system that allows users to make reservations
+              online. The project is built using Django and PostgreSQL,
+              providing a robust backend for managing bookings and customer
+              data.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -562,8 +600,16 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Household Budget Calculator</h2>
-            <p class="project-text">Some text here about the Househhold Budget Calculator project. It is a web application that helps users manage their household expenses and income. The project is built using HTML, CSS, and JavaScript, providing a user-friendly interface for tracking finances.</p>
+            <h2 class="experience-sub-title project-title">
+              Household Budget Calculator
+            </h2>
+            <p class="project-text">
+              Some text here about the Househhold Budget Calculator project. It
+              is a web application that helps users manage their household
+              expenses and income. The project is built using HTML, CSS, and
+              JavaScript, providing a user-friendly interface for tracking
+              finances.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -588,7 +634,12 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">Artist's Website</h2>
-            <p class="project-text">Some text here about the Artist's Website project. It is a portfolio website that showcases the work of an artist. A static website built with HTML and CSS, providing a modern and responsive design for displaying artwork.</p>
+            <p class="project-text">
+              Some text here about the Artist's Website project. It is a
+              portfolio website that showcases the work of an artist. A static
+              website built with HTML and CSS, providing a modern and responsive
+              design for displaying artwork.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -676,7 +727,7 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>

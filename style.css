@@ -210,10 +210,16 @@ section {
 /* PROFILE SECTION */
 
 #profile {
+  position: relative;
+
   display: flex;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+}
+
+.profile-pic {
+  border-radius: 50%;
 }
 
 .section__pic-container {
@@ -264,7 +270,6 @@ section {
 .contact-icon {
   cursor: pointer;
   height: 2rem;
-  fill: var(--accent-color);
 }
 
 .contact-icon:hover {
@@ -348,7 +353,7 @@ section {
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 50%;
 }
 
 .arrow {
@@ -393,7 +398,7 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+#skills {
   position: relative;
 }
 
