@@ -220,6 +220,7 @@ section {
 
 .profile-pic {
   border-radius: 50%;
+  border: 0.5px solid var(--bubble-fill-dark);
 }
 
 .section__pic-container {
@@ -301,32 +302,18 @@ section {
   border-radius: 2rem;
 }
 
-.btn-color-1,
-.btn-color-2 {
+.btn-color-1 {
   border:  var(--accent-color) 0.1rem solid;
 }
 
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: var(--bg-color);
-  color:  var(--text-color);
-}
-
 .btn-color-1:hover {
+  cursor: pointer;
   background:  var(--accent-color);
 }
 
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-  border: var(--accent-color) 0.1rem solid;
+.btn-color-1 {
+  background: var(--bg-color);
+  color:  var(--text-color);
 }
 
 /* ABOUT SECTION */
@@ -457,10 +444,10 @@ article .icon {
   color: var(--accent-color);
 }
 
-.project-btn {
+/* .project-btn {
   color: var(--text-color);
   border-color: var(--accent-color);
-}
+} */
 
 .project-text {
   color: var(--p-color);
