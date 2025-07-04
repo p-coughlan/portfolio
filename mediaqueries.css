@@ -54,7 +54,7 @@
   }
   #profile {
     display: grid;
-    align-content: space-evenly;
+    align-content: center;
     height: 83vh;
     margin-bottom: 0;
   }
